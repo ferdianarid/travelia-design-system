@@ -1,24 +1,23 @@
-import React from 'react';
-import '../styles/components/button.module.css';
+import React from 'react'
+import "../styles/components/button.module.css"
 
-interface ButtonProps {
-	primary?: boolean;
-       backgroundColor?: string;
-	size?: 'small' | 'medium' | 'large';
-	label: string;
-	onClick?: () => void;
+interface ButtonInterface {
+	variant?: string,
+	children?: string,
+	outline?: string,
+	onClick?: () => void
 }
 
-export const Button = ({ primary = false, size = 'medium', backgroundColor, label, ...props }: ButtonProps) => {
-	const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+const ButtonPrimary = ({ variant, children, ...props } : ButtonInterface ) =>  {
 	return (
-		<button
-			type="button"
-			className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
-			style={{ backgroundColor }}
-			{...props}
-		>
-			{label}
-		</button>
-	);
-};
+		<button className={`button ${ variant }`} {...props}>{ children }</button>
+	)
+}
+
+const ButtonSecondary = ({ variant, children, ...props } : ButtonInterface ) =>  {
+	return (
+		<button className={`button ${ variant }`} {...props}>{ children }</button>
+	)
+}
+
+export { ButtonPrimary, ButtonSecondary }
