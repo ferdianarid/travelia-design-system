@@ -1,30 +1,29 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
-  display: inline-block;
-  line-height: 1;
+.button {
+    font-family: 'SF Pro Display', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 12px 20px;
 }
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+
+.primary {
+    background-color: #405DC7;
+    color: #FFF
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+.secondary {
+    background-color: rgb(235, 235, 235);
+    color: rgb(7, 7, 7)
 }
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
+
+.warning {
+    background-color: yellow;
+    color: rgb(7, 7, 7)
 }
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
-}
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
+
+.danger {
+    background-color: red;
+    color: #FFF
 }
