@@ -2,22 +2,17 @@ import React from 'react'
 import "../styles/components/button.module.css"
 
 interface ButtonInterface {
-	variant?: string,
+	variant: string,
 	children?: string,
 	outline?: string,
+	className?: string,
 	onClick?: () => void
 }
 
-const ButtonPrimary = ({ variant, children, ...props } : ButtonInterface ) =>  {
+const Button = ({ variant, children, ...props } : ButtonInterface ) =>  {
 	return (
 		<button className={`button ${ variant }`} {...props}>{ children }</button>
 	)
 }
 
-const ButtonSecondary = ({ variant, children, ...props } : ButtonInterface ) =>  {
-	return (
-		<button className={`button ${ variant }`} {...props}>{ children }</button>
-	)
-}
-
-export { ButtonPrimary, ButtonSecondary }
+export  default Button
