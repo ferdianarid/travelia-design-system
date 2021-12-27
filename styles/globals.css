@@ -5,6 +5,82 @@
     font-family: "SF Pro Display", sans-serif;
 }
 
+.primary {
+    background-color: rgb(109, 109, 255);
+    color: #FFF;
+}
+
+.primary:hover {
+    background-color: rgb(55, 55, 240);
+}
+
+.success {
+    background-color: rgb(0, 151, 0);
+    color: #FFF;
+}
+
+.success:hover {
+    background-color: rgb(1, 122, 1);
+    color: #FFF;
+}
+
+.warning {
+    background-color: rgb(223, 223, 13);
+    color: #222;
+}
+
+.warning:hover {
+    background-color: rgb(199, 199, 11);
+    color: #222;
+}
+
+.secondary {
+    background-color: rgb(247, 247, 247);
+    color: rgb(17, 17, 17);
+}
+
+.secondary:hover {
+    background-color: rgb(212, 212, 212);
+}
+
+.danger {
+    background-color: rgb(255, 44, 44);
+    color: #FFF;
+}
+
+.danger:hover {
+    background-color: rgb(235, 23, 23);
+}
+
+.information {
+    background-color: rgb(105, 212, 255);
+    color: #FFF;
+}
+
+.information:hover {
+    background-color: rgb(62, 174, 218);
+    color: #FFF;
+}
+
+.dark {
+    background-color: rgb(24, 24, 24);
+    color: #FFF;
+}
+
+.dark:hover {
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+}
+
+.alert-opacity {
+    opacity: .8;
+}
+
+.outline-primary {
+    border: 1px;
+    border-color: rgb(109, 109, 255);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
