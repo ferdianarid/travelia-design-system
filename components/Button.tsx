@@ -1,18 +1,28 @@
-import React from 'react'
-import "../styles/components/button.module.css"
+import React, { ReactNode } from 'react'
 
+// import global css
+import "../styles/globals.css"
+
+// interface button
 interface ButtonInterface {
-	variant: string,
-	children?: string,
-	outline?: string,
-	className?: string,
+	variant: string
+	color?: string
+	children: string | ReactNode
 	onClick?: () => void
 }
 
-const Button = ({ variant, children, ...props } : ButtonInterface ) =>  {
+// fill button component
+const FillButton = ({ variant, color, children, ...props } : ButtonInterface ) =>  {
 	return (
-		<button className={`button ${ variant }`} {...props}>{ children }</button>
+		<button className={`text-sm ${ variant } outline-none py-2 px-4 rounded-md`} {...props}>{ children }</button>
 	)
 }
 
-export  default Button
+// Outline button component
+const PillButton = ({ variant, color, children, ...props } : ButtonInterface ) => {
+	return (
+		<button className={`text-sm ${ variant } outline-none py-2 px-4 rounded-full`} {...props}>{ children }</button>
+	)
+}
+
+export { FillButton, PillButton }
