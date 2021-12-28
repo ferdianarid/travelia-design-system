@@ -2,7 +2,7 @@ import React from "react"
 import Alert from "../components/Alert"
 
 export default {
-       title: "Alert",
+       title: "Component/Alert",
        component: Alert
 }
 
